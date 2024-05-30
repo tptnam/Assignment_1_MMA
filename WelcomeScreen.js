@@ -1,4 +1,11 @@
-import { ScrollView, View, Text, StyleSheet, Image, Pressable } from 'react-native';
+import {
+  ScrollView,
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  Pressable,
+} from "react-native";
 
 export default function WelcomeScreen({ navigation }) {
   return (
@@ -6,10 +13,10 @@ export default function WelcomeScreen({ navigation }) {
       <View style={styles.headerWrapper}>
         <Image
           style={styles.image}
-          source={require('./img/logo.png')}
+          source={require("./img/logo.png")}
           resizeMode="cover"
           accessible={true}
-          accessibilityLabel={'Little Lemon Logo'}
+          accessibilityLabel={"Little Lemon Logo"}
         />
 
         <Text style={styles.headerText}>Little Lemon</Text>
@@ -20,7 +27,7 @@ export default function WelcomeScreen({ navigation }) {
         to hear your experience with us!
       </Text>
       <Pressable
-        onPress={() => navigation.navigate('Menu')}
+        onPress={() => navigation.navigate("Menu")}
         style={styles.button}>
         <Text style={styles.buttonText}>View Menu</Text>
       </Pressable>
@@ -31,11 +38,11 @@ export default function WelcomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333333',
+    backgroundColor: "#333333",
   },
   headerWrapper: {
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: "row",
+    justifyContent: "center",
     margin: 10,
   },
   headerText: {
@@ -44,15 +51,15 @@ const styles = StyleSheet.create({
     paddingTop: 30,
     paddingBottom: 10,
     fontSize: 30,
-    color: '#EDEFEE',
-    textAlign: 'center',
+    color: "#EDEFEE",
+    textAlign: "center",
   },
   regularText: {
     fontSize: 24,
     padding: 20,
     marginVertical: 8,
-    color: '#EDEFEE',
-    textAlign: 'center',
+    color: "#EDEFEE",
+    textAlign: "center",
   },
   image: {
     width: 100,
